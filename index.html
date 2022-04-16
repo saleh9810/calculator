@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
+      integrity="sha384-ejwKkLla8gPP8t2u0eQyL0Q/4ItcnyveF505U0NIobD/SMsNyXrLti6CWaD0L52l"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section class="calculator-box text-center mt-5">
+      <div id="screen" class="calculator__screen"></div>
+      <i onclick="remove()" class="bi bi-file-x-fill"></i>
+
+      <div class="calculator__buttons">
+        <button class="clear" onclick="c()">C</button>
+        <div class="d-flex justify-content-center">
+          <button class="value">1</button>
+          <button class="value">2</button>
+          <button class="value">3</button>
+          <button class="value operation">-</button>
+        </div>
+
+        <div class="d-flex justify-content-center">
+          <button class="value">4</button>
+          <button class="value">5</button>
+          <button class="value">6</button>
+          <button class="value operation">+</button>
+        </div>
+        <div class="d-flex justify-content-center">
+          <button class="value">7</button>
+          <button class="value">8</button>
+          <button class="value">9</button>
+          <button class="value operation">/</button>
+        </div>
+
+        <div class="d-flex justify-content-center">
+          <button class="value">0</button>
+          <button class="value">.</button>
+          <button class="equal" onclick="result()">=</button>
+          <button class="value operation">*</button>
+        </div>
+      </div>
+    </section>
+    <script src="./js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
